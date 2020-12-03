@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0rem;
     box-sizing: border-box;
+    --tailleA: 17em;
 }
 
 ul {
@@ -104,38 +105,27 @@ li.dropdown {
     display: inline;
 }
 
-.introduction:hover {
-    background-color: navy;
-    color: white;
-    transition: width 2s, height 2s, background-color 2s, color 2s, transform 2s;
-    transition-duration: 0.75s;
-}
-
 .etoile1 {
-    width: 100%;
-    height: 300px;
-    display: flex;
+    width: 33%;
+    height: var(--tailleA);
+    display: inline-block;
     position: relative;
-    left: 1%;
-    top: 15rem;
 }
 
 .carredeco {
     width: 5em;
     height: 5em;
-    display: inline-block;
     animation-name: couleur;
     animation-duration: 10s;
     animation-iteration-count: infinite;
-    position: absolute;
-    left: 5em;
-    top: 5em;
+    position: relative;
+    top: calc(50% - 2.5em);
+    left: calc(50% - 2.5em);
 }
 
 .triangledeco {
     width: 0;
     height: 0;
-    display: inline-block;
     border-left: 2.5em solid royalblue;
     border-right: 2.5em solid royalblue;
     border-bottom: 5em solid transparent;
@@ -143,14 +133,12 @@ li.dropdown {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     position: absolute;
-    left: 5em;
-    top: 0%;
+    bottom: 5em;
 }
 
 .triangledeco2 {
     width: 0;
     height: 0;
-    display: inline-block;
     border-left: 2.5em solid royalblue;
     border-right: 2.5em solid royalblue;
     border-top: 5em solid transparent;
@@ -158,14 +146,12 @@ li.dropdown {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     position: absolute;
-    left: 5em;
-    top: 10em;
+    top: 5em;
 }
 
 .triangledeco3 {
     width: 0;
     height: 0;
-    display: inline-block;
     border-bottom: 2.5em solid royalblue;
     border-top: 2.5em solid royalblue;
     border-left: 5em solid transparent;
@@ -173,14 +159,12 @@ li.dropdown {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     position: absolute;
-    left: 10em;
-    top: 5em;
+    left: 5em;
 }
 
 .triangledeco4 {
     width: 0;
     height: 0;
-    display: inline-block;
     border-bottom: 2.5em solid royalblue;
     border-top: 2.5em solid royalblue;
     border-right: 5em solid transparent;
@@ -188,96 +172,39 @@ li.dropdown {
     animation-duration: 10s;
     animation-iteration-count: infinite;
     position: absolute;
-    left: 0px;
-    top: 93.33px;
+    right: 5em;
+}
+
+#centre {
+    width: 33%;
+    height: var(--tailleA);
+    display: inline-block;
+    position: relative;
 }
 
 .introduction {
-    width: 17em;
-    height: 17em;
+    width: var(--tailleA);
+    height: var(--tailleA);
     border-radius: 8.5em;
-    display: inline-block;
     background-color: #647FF5;
     color: black;
     font-size: auto;
-    text-align: justify;
+    text-align: center;
     font-weight: bold;
     padding: 55px 40px;
-    position: absolute;
-    left: 21em;
-    top: auto;
+    position: relative;
+    left: calc(50% - var(--tailleA)/2);
 }
 
-.carredeco2 {
-    width: 5em;
-    height: 5em;
-    display: inline-block;
-    animation-name: couleur;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    position: absolute;
-    left: 50em;
-    top: 5em;
+.introduction p {
+    padding-bottom: 1em;
 }
 
-.triangledeco5 {
-    width: 0;
-    height: 0;
-    display: inline-block;
-    border-left: 2.5em solid royalblue;
-    border-right: 2.5em solid royalblue;
-    border-bottom: 5em solid transparent;
-    animation-name: couleur;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    position: absolute;
-    left: 50em;
-    top: 0%;
-}
-
-.triangledeco6 {
-    width: 0;
-    height: 0;
-    display: inline-block;
-    border-left: 2.5em solid royalblue;
-    border-right: 2.5em solid royalblue;
-    border-top: 5em solid transparent;
-    animation-name: couleur;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    position: absolute;
-    left: 50em;
-    top: 10em;
-}
-
-.triangledeco7 {
-    width: 0;
-    height: 0;
-    display: inline-block;
-    border-bottom: 2.5em solid royalblue;
-    border-top: 2.5em solid royalblue;
-    border-left: 5em solid transparent;
-    animation-name: couleur;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    position: absolute;
-    left: 55em;
-    top: 5em;
-}
-
-.triangledeco8 {
-    width: 0;
-    height: 0;
-    display: inline-block;
-    border-bottom: 2.5em solid royalblue;
-    border-top: 2.5em solid royalblue;
-    border-right: 5em solid transparent;
-    animation-name: couleur;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    position: absolute;
-    left: 45em;
-    top: 5em;
+.introduction:hover {
+    background-color: navy;
+    color: white;
+    transition: width 2s, height 2s, background-color 2s, color 2s, transform 2s;
+    transition-duration: 0.75s;
 }
 
 @keyframes couleur {
@@ -307,73 +234,7 @@ li.dropdown {
         height: 300px;
         position: relative;
     }
-    .carredeco {
-        width: 5em;
-        height: 5em;
-        animation-name: couleur;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        position: relative;
-        top: calc(50% - 2.5em);
-        left: calc(50% - 2.5em);
-    }
-    .triangledeco {
-        width: 0;
-        height: 0;
-        border-left: 2.5em solid royalblue;
-        border-right: 2.5em solid royalblue;
-        border-bottom: 5em solid transparent;
-        animation-name: couleur;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        position: absolute;
-        bottom: 5em;
-    }
-    .triangledeco2 {
-        width: 0;
-        height: 0;
-        border-left: 2.5em solid royalblue;
-        border-right: 2.5em solid royalblue;
-        border-top: 5em solid transparent;
-        animation-name: couleur;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        position: absolute;
-        top: 5em;
-    }
-    .triangledeco3 {
-        width: 0;
-        height: 0;
-        border-bottom: 2.5em solid royalblue;
-        border-top: 2.5em solid royalblue;
-        border-left: 5em solid transparent;
-        animation-name: couleur;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        position: absolute;
-        left: 5em;
-    }
-    .triangledeco4 {
-        width: 0;
-        height: 0;
-        border-bottom: 2.5em solid royalblue;
-        border-top: 2.5em solid royalblue;
-        border-right: 5em solid transparent;
-        animation-name: couleur;
-        animation-duration: 10s;
-        animation-iteration-count: infinite;
-        position: absolute;
-        right: 5em;
-    }
-    .introduction {
+    #centre {
         width: 100%;
-        height: 300px;
-        border-radius: 8.5em;
-        background-color: #647FF5;
-        color: black;
-        font-size: auto;
-        text-align: justify;
-        font-weight: bold;
-        padding: 55px 40px;
     }
 }

@@ -1,56 +1,51 @@
 * {
-  font-size: 14pt;
-margin: 0;
-padding: 0rem;
-box-sizing : border-box;
-     }
-
-ul {
-background-attachment: fixed;
+    font-size: 14pt;
+    margin: 0;
+    padding: 0rem;
+    box-sizing: border-box;
 }
 
+ul {
+    background-attachment: fixed;
+}
 
-body  {
-background-attachment: fixed;
- background-color: royalblue;
- background-repeat:no-repeat;
- background-size: 100% auto;
- margin:0rem;
- padding: 0px;
+body {
+    background-attachment: fixed;
+    background-color: royalblue;
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    margin: 0rem;
+    padding: 0px;
 }
 
 body::-webkit-scrollbar {
- width: 0.25rem;
+    width: 0.25rem;
 }
 
 body::-webkit-scrollbar-track {
-background: black;
+    background: black;
 }
 
 body::-webkit-scrollbar-thumb {
-background: darkmagenta;
+    background: darkmagenta;
 }
 
-
-
-
-
-
-  ul {
+ul {
     width: auto;
     list-style-type: none;
     margin: 0px;
     padding: 0px;
-    position:fixed;
-    background-color:  #647FF5;
+    position: fixed;
+    background-color: #647FF5;
     z-index: 2;
-  }
-  
-  li {
+}
+
+li {
     float: left;
-  }
-  
-  li a, .dropbtn {
+}
+
+li a,
+.dropbtn {
     display: inline-block;
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
@@ -58,36 +53,35 @@ background: darkmagenta;
     font-weight: bold;
     padding: 14px 16px;
     text-decoration: none;
-  }
-  
-  a {
+}
+
+a {
     color: #fff;
     background-color: #647FF5;
     transition: all 0.75s ease-out;
-  }
-  
-  a:hover,
-  a:focus {
+}
+
+a:hover,
+a:focus {
     color: #333;
     background-color: #fff;
-  }
+}
 
-  
-  li.dropdown {
+li.dropdown {
     display: inline-block;
-  }
-  
-  .dropdown-content {
+}
+
+.dropdown-content {
     display: none;
     position: absolute;
     background-color: white;
     color: #333;
     min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
-  }
-  
-  .dropdown-content a {
+}
+
+.dropdown-content a {
     color: white;
     text-shadow: black 0.1em 0.1em 0.2em;
     padding: 12px 16px;
@@ -95,436 +89,291 @@ background: darkmagenta;
     font-weight: normal;
     display: block;
     text-align: left;
-  }
-  
-  .dropdown-content a:hover {
-    background-color:white;
-    color:#333;
-  
-  }
-  
-  .dropdown:hover .dropdown-content {
+}
+
+.dropdown-content a:hover {
+    background-color: white;
+    color: #333;
+}
+
+.dropdown:hover .dropdown-content {
     display: block;
-  }
+}
 
-  .enligne{
-    display:inline ;
-  }
-   
- 
+.enligne {
+    display: inline;
+}
 
- .introduction:hover {
-  background-color: navy;
-  color: white;
-  transition: width 2s, height 2s, background-color 2s, color 2s, transform 2s ;
-  transition-duration: 0.75s;
-  
-  }
+.introduction:hover {
+    background-color: navy;
+    color: white;
+    transition: width 2s, height 2s, background-color 2s, color 2s, transform 2s;
+    transition-duration: 0.75s;
+}
 
-
-  .etoile1{
+.etoile1 {
     width: 100%;
     height: 300px;
     display: flex;
     position: relative;
-    left:1%;
-    top:15rem;
-  
-  }
+    left: 1%;
+    top: 15rem;
+}
 
-
-  .carredeco{
+.carredeco {
     width: 5em;
-    height:5em;
+    height: 5em;
     display: inline-block;
     animation-name: couleur;
     animation-duration: 10s;
-  animation-iteration-count: infinite;
-  position: absolute;
-      left:5em;
-      top:5em;
-    
-  }
-  .triangledeco{
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 5em;
+    top: 5em;
+}
+
+.triangledeco {
     width: 0;
     height: 0;
     display: inline-block;
     border-left: 2.5em solid royalblue;
-border-right: 2.5em solid royalblue;
-border-bottom: 5em solid transparent;
-animation-name: couleur;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-position:  absolute;
-    left:5em;
-    top:0%;
+    border-right: 2.5em solid royalblue;
+    border-bottom: 5em solid transparent;
+    animation-name: couleur;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 5em;
+    top: 0%;
+}
 
-                    }
-
-            
-
- .triangledeco2{
-  width: 0;
-  height: 0;
-  display: inline-block;
-  border-left: 2.5em solid royalblue;
-  border-right: 2.5em solid royalblue;
-  border-top: 5em solid transparent;
-  animation-name: couleur;
-  animation-duration: 10s;
-animation-iteration-count: infinite;
-position:  absolute;
-left:5em;
-top:10em;
-    } 
-
+.triangledeco2 {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-left: 2.5em solid royalblue;
+    border-right: 2.5em solid royalblue;
+    border-top: 5em solid transparent;
+    animation-name: couleur;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 5em;
+    top: 10em;
+}
 
 .triangledeco3 {
-width: 0;
-height: 0;
-display: inline-block;
-border-bottom: 2.5em solid royalblue;
-border-top: 2.5em solid royalblue;
-border-left: 5em solid transparent;
-animation-name: couleur;
-  animation-duration: 10s;
-animation-iteration-count: infinite;
-position:  absolute;
-      left:10em;
-      top:5em;
- }
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-bottom: 2.5em solid royalblue;
+    border-top: 2.5em solid royalblue;
+    border-left: 5em solid transparent;
+    animation-name: couleur;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 10em;
+    top: 5em;
+}
 
 .triangledeco4 {
-width: 0;
-height: 0;
-display: inline-block;
-border-bottom: 2.5em solid royalblue;
-border-top: 2.5em solid royalblue;
-border-right: 5em solid transparent;
-animation-name: couleur;
-  animation-duration: 10s;
-animation-iteration-count: infinite;
-position: absolute;
-      left:0px;
-      top:93.33px;
-}
-
-
-
-.introduction{
-width: 17em;
-height: 17em;
-border-radius: 8.5em;
-display: inline-block;
-background-color: #647FF5;
-color: black;
-font-size: auto;
-text-align: justify;
-font-weight: bold;
-padding: 55px 40px; 
-position:absolute;
-left:21em;
-top:auto;
-}
-
-
-
-
-.carredeco2{
-width: 5em;
-height:5em;
-display: inline-block;
-animation-name: couleur;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-position: absolute;
-left:50em;
-top:5em;
-
-}
-.triangledeco5{
-width: 0;
-height: 0;
-display: inline-block;
-border-left: 2.5em solid royalblue;
-border-right: 2.5em solid royalblue;
-border-bottom: 5em solid transparent;
-animation-name: couleur;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-position: absolute;
-left:50em;
-top:0%;
-
-
-              }
-
-      
-
-.triangledeco6{
-width: 0;
-  height: 0;
-  display: inline-block;
-  border-left: 2.5em solid royalblue;
-  border-right: 2.5em solid royalblue;
-  border-top: 5em solid transparent;
-  animation-name: couleur;
-  animation-duration: 10s;
-animation-iteration-count: infinite;
-position: absolute;
-left:50em;
-top:10em;
-
-} 
-
-
-.triangledeco7 {
-width: 0;
-height: 0;
-display: inline-block;
-border-bottom: 2.5em solid royalblue;
-border-top: 2.5em solid royalblue;
-border-left: 5em solid transparent;
-animation-name: couleur;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-position: absolute;
-left:55em;
-top:5em;
-}
-
-.triangledeco8 {
-width: 0;
-height: 0;
-display: inline-block;
-border-bottom: 2.5em solid royalblue;
-border-top: 2.5em solid royalblue;
-border-right: 5em solid transparent;
-animation-name: couleur;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-position: absolute;
-left:45em;
-top:5em;
-}
-
-
-
-@keyframes couleur{
-from{background-color:orange;}
-25%{background-color: yellow;}
-50%{background-color: palegoldenrod;}
-75%{background-color: yellow;}
-to{background-color: orange;}
-
-}
-
-
-
-
-
-
-
-
-
-
-
-@media screen and (min-width:781px) {
-
-  .etoile1{
-    width: 100%;
-    height: 100%;
+    width: 0;
+    height: 0;
     display: inline-block;
-    position: relative;
-    left:1%;
-    top:15rem;
-  
-  }
+    border-bottom: 2.5em solid royalblue;
+    border-top: 2.5em solid royalblue;
+    border-right: 5em solid transparent;
+    animation-name: couleur;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 0px;
+    top: 93.33px;
+}
 
+.introduction {
+    width: 17em;
+    height: 17em;
+    border-radius: 8.5em;
+    display: inline-block;
+    background-color: #647FF5;
+    color: black;
+    font-size: auto;
+    text-align: justify;
+    font-weight: bold;
+    padding: 55px 40px;
+    position: absolute;
+    left: 21em;
+    top: auto;
+}
 
-  .carredeco{
+.carredeco2 {
     width: 5em;
-    height:5em;
+    height: 5em;
     display: inline-block;
     animation-name: couleur;
     animation-duration: 10s;
-    float: none;
-  animation-iteration-count: infinite;
-  position: absolute;
-      left:5em;
-      top:5em;
-    
-  }
-  .triangledeco{
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 50em;
+    top: 5em;
+}
+
+.triangledeco5 {
     width: 0;
     height: 0;
-    float: none;
     display: inline-block;
     border-left: 2.5em solid royalblue;
-border-right: 2.5em solid royalblue;
-border-bottom: 5em solid transparent;
-animation-name: couleur;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-position:  absolute;
-    left:5em;
-    top:0%;
-
-                    }
-
-            
-
- .triangledeco2{
-  width: 0;
-  height: 0;
-  float: none;
-  display: inline-block;
-  border-left: 2.5em solid royalblue;
-  border-right: 2.5em solid royalblue;
-  border-top: 5em solid transparent;
-  animation-name: couleur;
-  animation-duration: 10s;
-animation-iteration-count: infinite;
-position:  absolute;
-left:5em;
-bottom:19.5px;
-    } 
-
-
-.triangledeco3 {
-width: 0;
-height: 0;
-float: none;
-display: inline-block;
-border-bottom: 2.5em solid royalblue;
-border-top: 2.5em solid royalblue;
-border-left: 5em solid transparent;
-animation-name: couleur;
-  animation-duration: 10s;
-animation-iteration-count: infinite;
-position:  absolute;
-      left:10em;
-      top:5em;
- }
-
-.triangledeco4 {
-width: 0;
-height: 0;
-float: none;
-display: inline-block;
-border-bottom: 2.5em solid royalblue;
-border-top: 2.5em solid royalblue;
-border-right: 5em solid transparent;
-animation-name: couleur;
-  animation-duration: 10s;
-animation-iteration-count: infinite;
-position: absolute;
-      left:0px;
-      top:93.33px;
+    border-right: 2.5em solid royalblue;
+    border-bottom: 5em solid transparent;
+    animation-name: couleur;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 50em;
+    top: 0%;
 }
 
-
-
-.introduction{
-width: 17em;
-height: 17em;
-border-radius: 8.5em;
-display: inline-block;
-background-color: #647FF5;
-color: black;
-font-size: auto;
-text-align: justify;
-font-weight: bold;
-padding: 55px 40px; 
-position:absolute;
-left:21em;
-top:auto;
+.triangledeco6 {
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-left: 2.5em solid royalblue;
+    border-right: 2.5em solid royalblue;
+    border-top: 5em solid transparent;
+    animation-name: couleur;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 50em;
+    top: 10em;
 }
-
-
-
-
-.carredeco2{
-width: 5em;
-height:5em;
-float: none;
-display: inline-block;
-animation-name: couleur;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-position: absolute;
-right:5em;
-top:5em;
-
-}
-.triangledeco5{
-width: 0;
-height: 0;
-float: none;
-display: inline-block;
-border-left: 2.5em solid royalblue;
-border-right: 2.5em solid royalblue;
-border-bottom: 5em solid transparent;
-animation-name: couleur;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-position: absolute;
-right:5em;
-top:0%;
-
-
-              }
-
-      
-
-.triangledeco6{
-width: 0;
-  height: 0;
-  float: none;
-  display: inline-block;
-  border-left: 2.5em solid royalblue;
-  border-right: 2.5em solid royalblue;
-  border-top: 5em solid transparent;
-  animation-name: couleur;
-  animation-duration: 10s;
-animation-iteration-count: infinite;
-position: absolute;
-right:5em;
-bottom:19.5px;
-
-} 
-
 
 .triangledeco7 {
-width: 0;
-height: 0;
-float: none;
-display: inline-block;
-border-bottom: 2.5em solid royalblue;
-border-top: 2.5em solid royalblue;
-border-left: 5em solid transparent;
-animation-name: couleur;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-position: absolute;
-right:0%;
-top:5em;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-bottom: 2.5em solid royalblue;
+    border-top: 2.5em solid royalblue;
+    border-left: 5em solid transparent;
+    animation-name: couleur;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 55em;
+    top: 5em;
 }
 
 .triangledeco8 {
-width: 0;
-height: 0;
-float: none;
-display: inline-block;
-border-bottom: 2.5em solid royalblue;
-border-top: 2.5em solid royalblue;
-border-right: 5em solid transparent;
-animation-name: couleur;
-animation-duration: 10s;
-animation-iteration-count: infinite;
-position: absolute;
-right:10em;
-top:5em;
+    width: 0;
+    height: 0;
+    display: inline-block;
+    border-bottom: 2.5em solid royalblue;
+    border-top: 2.5em solid royalblue;
+    border-right: 5em solid transparent;
+    animation-name: couleur;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    position: absolute;
+    left: 45em;
+    top: 5em;
 }
 
+@keyframes couleur {
+    from {
+        background-color: orange;
+    }
+    25% {
+        background-color: yellow;
+    }
+    50% {
+        background-color: palegoldenrod;
+    }
+    75% {
+        background-color: yellow;
+    }
+    to {
+        background-color: orange;
+    }
+}
+
+@media screen and (max-width:781px) {
+    .toto {
+        background-color: pink;
+    }
+    .etoile1 {
+        width: 100%;
+        height: 300px;
+        position: relative;
+    }
+    .carredeco {
+        width: 5em;
+        height: 5em;
+        animation-name: couleur;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: relative;
+        top: calc(50% - 2.5em);
+        left: calc(50% - 2.5em);
+    }
+    .triangledeco {
+        width: 0;
+        height: 0;
+        border-left: 2.5em solid royalblue;
+        border-right: 2.5em solid royalblue;
+        border-bottom: 5em solid transparent;
+        animation-name: couleur;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        bottom: 5em;
+    }
+    .triangledeco2 {
+        width: 0;
+        height: 0;
+        border-left: 2.5em solid royalblue;
+        border-right: 2.5em solid royalblue;
+        border-top: 5em solid transparent;
+        animation-name: couleur;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        top: 5em;
+    }
+    .triangledeco3 {
+        width: 0;
+        height: 0;
+        border-bottom: 2.5em solid royalblue;
+        border-top: 2.5em solid royalblue;
+        border-left: 5em solid transparent;
+        animation-name: couleur;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        left: 5em;
+    }
+    .triangledeco4 {
+        width: 0;
+        height: 0;
+        border-bottom: 2.5em solid royalblue;
+        border-top: 2.5em solid royalblue;
+        border-right: 5em solid transparent;
+        animation-name: couleur;
+        animation-duration: 10s;
+        animation-iteration-count: infinite;
+        position: absolute;
+        right: 5em;
+    }
+    .introduction {
+        width: 100%;
+        height: 300px;
+        border-radius: 8.5em;
+        background-color: #647FF5;
+        color: black;
+        font-size: auto;
+        text-align: justify;
+        font-weight: bold;
+        padding: 55px 40px;
+    }
 }

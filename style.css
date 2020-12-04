@@ -4,10 +4,7 @@
     padding: 0rem;
     box-sizing: border-box;
     --tailleA: 17em;
-}
-
-ul {
-    background-attachment: fixed;
+    /*C'est une variable à utiliser partout où la meme valeur doit exister*/
 }
 
 body {
@@ -31,7 +28,35 @@ body::-webkit-scrollbar-thumb {
     background: darkmagenta;
 }
 
-ul {
+.navbarr {
+    width: 100%;
+    position: relative;
+}
+
+.container {
+    background: #CCC;
+}
+
+.faq-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: relative;
+}
+
+.faq-cards__card {
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    width: 225px;
+    background: #647FF5;
+    text-align: center;
+}
+
+
+/*
+ul {  
+    background-attachment: fixed;
     width: auto;
     list-style-type: none;
     margin: 0px;
@@ -45,7 +70,13 @@ li {
     float: left;
 }
 
+li.dropdown {
+    display: inline-block;
+}
+*/
+
 li a,
+.faq-cards__card a,
 .dropbtn {
     display: inline-block;
     color: white;
@@ -66,10 +97,6 @@ a:hover,
 a:focus {
     color: #333;
     background-color: #fff;
-}
-
-li.dropdown {
-    display: inline-block;
 }
 
 .dropdown-content {
@@ -108,6 +135,7 @@ li.dropdown {
 .etoile1 {
     width: 33%;
     height: var(--tailleA);
+    /*Utilisation de la variable*/
     display: inline-block;
     position: relative;
 }
@@ -120,6 +148,7 @@ li.dropdown {
     animation-iteration-count: infinite;
     position: relative;
     top: calc(50% - 2.5em);
+    /*On centre verticalement l'element par rapport à son parent (moitier de la hauteur du parent moins la mointier de la hauteur de l'élément)*/
     left: calc(50% - 2.5em);
 }
 
@@ -228,6 +257,26 @@ li.dropdown {
 @media screen and (max-width:781px) {
     .toto {
         background-color: pink;
+    }
+    #burger-bouton:hover+.faq-cards,
+    .faq-cards:hover {
+        display: flex;
+        background-color: red;
+    }
+    .burger-barre {
+        width: 35px;
+        height: 5px;
+        background-color: black;
+        margin: 6px 0;
+    }
+    .burger-barre.top {
+        margin-top: 0;
+    }
+    .burger-barre.bottom {
+        margin-bottom: 0;
+    }
+    .faq-cards {
+        display: none;
     }
     .etoile1 {
         width: 100%;
